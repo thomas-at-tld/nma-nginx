@@ -1,7 +1,7 @@
 #!/bin/bash
 
 USER_NAME=nma
-PASSWD=retepasjak
+PASSWD=therewasaswaninthepool
 CRYPTPASS=`openssl passwd -crypt ${PASSWD}`
 
 echo "${USER_NAME}:${CRYPTPASS}" >> /etc/nginx/.htpasswd
