@@ -1,5 +1,7 @@
 FROM nginx:1.23
-COPY aws/default.conf /etc/nginx/conf.d/default.conf
+COPY aws0/nginx.conf /etc/nginx/nginx.conf
+COPY aws0/default.conf /etc/nginx/conf.d/default.conf
+COPY aws0/stream.conf /etc/nginx/conf.d/stream.conf
 COPY content-home/index.html /usr/share/nginx/html/index.html
 COPY script/gen_htpasswd.sh /etc/nginx/gen_htpasswd.sh
 
