@@ -6,7 +6,7 @@
 
 ## Run the docker container in development environment
 
-    docker run -p 3050:80 -p 27020:27020 -d --network=nma-microservices --name nma-nginx nma-nginx
+    docker run -p 3050:80 -p 27020:27020 -d --add-host=host.docker.internal:host-gateway --network=nma-microservices --name nma-nginx nma-nginx
 
 ## Build container for aws/cloud environment
 
