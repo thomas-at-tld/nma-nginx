@@ -12,10 +12,6 @@
 
 ## Build container for aws/cloud environment
 
-For cluster0:
-    docker build -t nma-nginx-0 . -f ./aws0/Dockerfile
-
-For cluster1:
     docker build -t nma-nginx . -f ./aws1/Dockerfile
 
 
